@@ -5,16 +5,24 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
-    Animator animator;
+    public Animator animator;
+    SpriteRenderer sprite;
+
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
         tag = "Atacando";
     }
 
     // Update is called once per frame
     void Update()
+    {
+        Move();
+        LimitedArea();
+    }
+    void Move()
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
@@ -25,45 +33,23 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(Vector3.down * speed * Time.deltaTime);
             animator.SetTrigger("running");
-        }
+        } 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            if (transform.rotation.y == 0)
-            {
-                transform.Rotate(0f, 180f, 0f);
-            }
-            transform.Translate(Vector3.right * speed * Time.deltaTime);
+            transform.Translate(Vector3.left * speed * Time.deltaTime);
             animator.SetTrigger("running");
-        }
+            sprite.flipX = true;
+        } 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            if (transform.rotation.y == 180)
-            {
-                transform.Rotate(0f, 1f, 0f);
-                Debug.Log("func");
-            }
             transform.Translate(Vector3.right * speed * Time.deltaTime);
             animator.SetTrigger("running");
+            sprite.flipX = false;
         }
-        if (Input.GetKey(KeyCode.Space))
+        else
         {
-            if ( tag == "Atacando")
-            {
-                animator.SetBool("running", false);
-                animator.SetBool("kicking", false);
-                animator.SetBool("defending", false);
-                animator.SetBool("atacking", true);
-            }
-            else
-            {
-                animator.SetBool("running", false);
-                animator.SetBool("kicking", false);
-                animator.SetBool("defending", true);
-                animator.SetBool("atacking", false);
-            }
-
+            animator.SetTrigger("idle");
         }
-        LimitedArea();
     }
     void LimitedArea()
     {
