@@ -48,7 +48,7 @@ public class BallController2 : MonoBehaviour
             MovimientoParab(transform.position, setpoint.position);
         }
     }
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)//Luciano
     {
         if (collision.name == "SetPoint")
         {
