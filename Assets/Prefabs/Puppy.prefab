@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6142498724248773316}
   - component: {fileID: 428945171327248269}
   - component: {fileID: 3035481253452185751}
+  - component: {fileID: 889599194165869151}
   m_Layer: 0
   m_Name: Puppy
   m_TagString: EnZona
@@ -72,7 +73,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d71b852d142fd53439b4a260e972a0c1, type: 3}
+  m_Sprite: {fileID: -2732520321345367317, guid: 070503a3ab7c8b241b6fbf57ac074db0,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -137,7 +139,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.47, y: 0.34}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -162,3 +164,22 @@ PolygonCollider2D:
       - {x: 0.18506289, y: 0.1155169}
       - {x: 0.23839045, y: 0.08020949}
       - {x: 0.24083805, y: 0.14573312}
+--- !u!95 &889599194165869151
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6142498724248773315}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b05051a029bd54f41adc33ca711ab31a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

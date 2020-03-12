@@ -14,6 +14,8 @@ public class BallController2 : MonoBehaviour
     public PuppyManager puppymanager;
     public Transform rebote;
     public Transform setpoint;
+    public UIManager uimanager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,14 @@ public class BallController2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
+        if (uimanager.count <= 0)
+        {
+            Move();
+        }
+        else
+        {
+
+        }
     }
     private void Move()
     {

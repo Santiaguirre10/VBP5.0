@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public Animator animator;
     SpriteRenderer sprite;
+    public UIManager uimanager;
 
     // Start is called before the first frame update
     void Start()
@@ -19,8 +20,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
-        LimitedArea();
+        if (uimanager.count <= 0)
+        {
+            Move();
+            LimitedArea();
+            animator.enabled = true;
+        }
+        else
+        {
+            
+        }
     }
     void Move()
     {
@@ -63,12 +72,12 @@ public class PlayerController : MonoBehaviour
             float step = speed * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(4.6f, transform.position.y), step);
         }
-        /*if (transform.position.y <= 2f)
+        if (transform.position.y <= 2f)
         {
             float step = speed * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, 2.1f), step);
         }
-        if (transform.position.y >= 5.72f)
+        /*if (transform.position.y >= 5.72f)
         {
             float step = speed * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, 5.7f), step);
