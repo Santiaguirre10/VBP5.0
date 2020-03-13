@@ -30,8 +30,8 @@ public class PuppyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
-        if(life <= 0)
+        transform.Translate(Vector3.left * speed * Time.deltaTime);
+        if (life <= 0)
         {
             puppymanager.puppys.Remove(gameObject);
             puppymanager.distances.Remove(gameObject.transform.position.x);

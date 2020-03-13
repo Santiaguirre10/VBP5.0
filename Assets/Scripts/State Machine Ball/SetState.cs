@@ -9,6 +9,7 @@ public class SetState : MonoBehaviour
     public Transform start;
     public Transform setpoint;
     public GameObject player;
+    public StateMachineBall machine;
 
     private void Update()
     {
@@ -16,6 +17,8 @@ public class SetState : MonoBehaviour
     }
     private void OnEnable()
     {
+        player.GetComponent<PlayerController>().atacking = true;
+        player.GetComponent<PlayerController>().defending = false;
         start.position = setpoint.position;
         if (player.transform.position.x <= 3f)
         {
@@ -24,6 +27,13 @@ public class SetState : MonoBehaviour
         if (player.transform.position.x > 3f)
         {
             end.position = new Vector2(4.5f, player.transform.position.y + 1f);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.name == "Player" && player.GetComponent<PlayerController>().atacking == true)
+        {
+            machine.ActivateState(machine.atackState);
         }
     }
 }

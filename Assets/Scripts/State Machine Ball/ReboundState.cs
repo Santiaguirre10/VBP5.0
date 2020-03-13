@@ -8,6 +8,8 @@ public class ReboundState : MonoBehaviour
     public Transform end;
     public Transform start;
     public Transform rebound;
+    public StateMachineBall machine;
+
     private void Update()
     {
         parab.MovimientoParab(start.position, end.position);
@@ -17,6 +19,13 @@ public class ReboundState : MonoBehaviour
         start.position = rebound.position;
         var x = Random.Range(-1.31f, 4.97f);
         var y = Random.Range(1.8f, 5.6f);
-        end.position = new Vector2(x, y); 
+        end.position = new Vector2(x, y);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.name == "Player" && collision.GetComponent<PlayerController>().defending == true)
+        {
+            machine.ActivateState(machine.defenseState);
+        }
     }
 }

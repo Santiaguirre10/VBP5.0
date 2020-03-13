@@ -8,6 +8,8 @@ public class DefenseState : MonoBehaviour
     public Transform end;
     public Transform start;
     public Transform setpoint;
+    public StateMachineBall machine;
+
     private void Update()
     {
         parab.MovimientoParab(start.position, end.position);
@@ -16,5 +18,12 @@ public class DefenseState : MonoBehaviour
     {
         start.position = transform.position;
         end.position = setpoint.position;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.name == "SetPoint")
+        {
+            machine.ActivateState(machine.setState);
+        }
     }
 }

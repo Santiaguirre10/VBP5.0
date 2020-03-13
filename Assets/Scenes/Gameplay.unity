@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df4596076ada2f4188cca9eab4479f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 0
+  count: 1
   startCount: {fileID: 2052995139}
   puppymanager: {fileID: 1502077304}
   ball: {fileID: 2013722643}
@@ -265,7 +265,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 578183559}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &511169533
 BoxCollider2D:
@@ -291,7 +291,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.3}
+  m_Size: {x: 0.01, y: 0.01}
   m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
@@ -537,6 +537,7 @@ Transform:
   - {fileID: 1070408189}
   - {fileID: 1652769850}
   - {fileID: 562334666}
+  - {fileID: 1101186447}
   - {fileID: 511169532}
   - {fileID: 1502077305}
   - {fileID: 1470657723}
@@ -626,7 +627,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917374786}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.954292, y: 3.4647293, z: 0}
+  m_LocalPosition: {x: 11.954292, y: 3.65, z: 0}
   m_LocalScale: {x: 2.8571448, y: 3.1247938, z: 0}
   m_Children: []
   m_Father: {fileID: 1502077305}
@@ -683,7 +684,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058578277}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.954292, y: 1.8429613, z: 0}
+  m_LocalPosition: {x: 11.954292, y: 2, z: 0}
   m_LocalScale: {x: 2.8571448, y: 3.1247938, z: 0}
   m_Children: []
   m_Father: {fileID: 1502077305}
@@ -795,6 +796,86 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1101186446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1101186447}
+  - component: {fileID: 1101186448}
+  m_Layer: 0
+  m_Name: End (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1101186447
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101186446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.49, y: -0.544, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0}
+  m_Children: []
+  m_Father: {fileID: 578183559}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1101186448
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101186446}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 27996b0821291444797485544ac9e9cd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1166245163
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,7 +905,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 578183559}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1166245165
 BoxCollider2D:
@@ -877,7 +958,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294601730}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.954292, y: 5.3864775, z: 0}
+  m_LocalPosition: {x: 11.954292, y: 5.3, z: 0}
   m_LocalScale: {x: 2.8571448, y: 3.1247938, z: 0}
   m_Children: []
   m_Father: {fileID: 1502077305}
@@ -937,7 +1018,7 @@ Transform:
   m_LocalScale: {x: 0.6999995, y: 0.64004225, z: 0}
   m_Children: []
   m_Father: {fileID: 578183559}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1502077304
 GameObject:
@@ -973,7 +1054,7 @@ Transform:
   - {fileID: 917374787}
   - {fileID: 1058578278}
   m_Father: {fileID: 578183559}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1583782490
 GameObject:
@@ -1075,6 +1156,8 @@ MonoBehaviour:
   speed: 3
   animator: {fileID: 0}
   uimanager: {fileID: 31048866}
+  atacking: 0
+  defending: 0
 --- !u!61 &1583782494
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1183,6 +1266,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PuppyManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7988323650066374252, guid: 54e7cef1449c1ba47ace17bb69b78c68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7988323650066374253, guid: 54e7cef1449c1ba47ace17bb69b78c68,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1271,7 +1359,7 @@ MonoBehaviour:
   puppys: []
   distances: []
   mindistance: 20
-  valla: {fileID: 0}
+  valla: {fileID: 1166245163}
   objball: {x: 0, y: 0}
 --- !u!1 &1768286035
 GameObject:
@@ -1358,7 +1446,6 @@ GameObject:
   - component: {fileID: 2013722653}
   - component: {fileID: 2013722652}
   - component: {fileID: 2013722651}
-  - component: {fileID: 2013722650}
   - component: {fileID: 2013722649}
   m_Layer: 0
   m_Name: Ball
@@ -1501,19 +1588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
---- !u!114 &2013722650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013722643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc58c40ef516404d9b655f2a830de0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
+  t: 0
 --- !u!114 &2013722651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1530,6 +1605,7 @@ MonoBehaviour:
   end: {fileID: 562334666}
   start: {fileID: 1652769850}
   setpoint: {fileID: 809177165}
+  machine: {fileID: 2013722656}
 --- !u!114 &2013722652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1546,6 +1622,7 @@ MonoBehaviour:
   end: {fileID: 562334666}
   start: {fileID: 1652769850}
   rebound: {fileID: 511169532}
+  machine: {fileID: 2013722656}
 --- !u!114 &2013722653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1558,10 +1635,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f8a7cdbf431d549a311bb7de6bf3b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  linear: {fileID: 2013722650}
   end: {fileID: 562334666}
   start: {fileID: 1652769850}
   rebound: {fileID: 511169532}
+  machine: {fileID: 2013722656}
+  player: {fileID: 1583782493}
 --- !u!114 &2013722654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1574,10 +1652,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3980b9fb64c72a846a28b325614b9b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  linear: {fileID: 2013722650}
+  parab: {fileID: 2013722649}
   end: {fileID: 562334666}
   start: {fileID: 1652769850}
   puppymanager: {fileID: 1728416115}
+  machine: {fileID: 2013722656}
+  speed: 5
 --- !u!114 &2013722655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1595,6 +1675,7 @@ MonoBehaviour:
   start: {fileID: 1652769850}
   setpoint: {fileID: 809177165}
   player: {fileID: 1583782490}
+  machine: {fileID: 2013722656}
 --- !u!114 &2013722656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1613,6 +1694,7 @@ MonoBehaviour:
   reboundState: {fileID: 2013722652}
   defenseState: {fileID: 2013722651}
   initialState: {fileID: 2013722655}
+  parab: {fileID: 2013722649}
 --- !u!1 &2052995139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,6 +1750,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 20

@@ -8,13 +8,16 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     SpriteRenderer sprite;
     public UIManager uimanager;
+    public bool atacking;
+    public bool defending;
 
     // Start is called before the first frame update
     void Start()
     {
+        atacking = true;
+        defending = false;
         animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
-        tag = "Atacando";
     }
 
     // Update is called once per frame

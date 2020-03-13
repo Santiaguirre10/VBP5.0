@@ -12,6 +12,8 @@ public class StateMachineBall : MonoBehaviour
     public MonoBehaviour initialState;
     private MonoBehaviour actualState;
 
+    public ParabolicMovement parab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,17 @@ public class StateMachineBall : MonoBehaviour
             actualState.enabled = false;
             actualState = newState;
             actualState.enabled = true; 
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.name == "Player")
+        {
+            parab.t = 0;
+        }
+        if (collision.name == "SetPoint")
+        {
+            parab.t = 0;
         }
     }
 }
