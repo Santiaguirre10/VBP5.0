@@ -6,34 +6,20 @@ public class PuppyManager : MonoBehaviour
 {
     public GameObject puppy1;
     public GameObject[] puppyspamer;
-    public GameObject puppyspamer1;
-    public GameObject puppyspamer2;
-    public GameObject puppyspamer3;
     public List<GameObject> puppys;
     public List<float> distances;
     public float mindistance;
     public GameObject valla;
     public Vector2 objball;
 
-    // Start is called before the first frame update
-    void Awake()
-    {
-        puppyspamer1 = GameObject.Find("PuppySpammer");
-        puppyspamer2 = GameObject.Find("PuppySpammer (1)");
-        puppyspamer3 = GameObject.Find("PuppySpammer (2)");
-        puppyspamer[0] = puppyspamer1;
-        puppyspamer[1] = puppyspamer2;
-        puppyspamer[2] = puppyspamer3;
-    }
-    void Start()
-    {
-        InvokeRepeating("PuppyCreator", 3, 5);
-    }
-
     // Update is called once per frame
     void Update()
     {
         DistanceCalculator();
+    }
+    private void OnEnable()
+    {
+        InvokeRepeating("PuppyCreator", 3, 5);
     }
     void PuppyCreator()
     {

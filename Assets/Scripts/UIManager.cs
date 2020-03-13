@@ -8,7 +8,8 @@ public class UIManager : MonoBehaviour
     public float count;
     public GameObject startCount;
     public GameObject puppymanager;
-    bool managerspawned;
+    public GameObject ball;
+    bool startcount = true;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -17,21 +18,20 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         count = 3;
-        managerspawned = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         startCount.GetComponent<Text>().text = count.ToString("f0");
-        count -= Time.deltaTime;
-        if (count <= 0)
-        {
-            startCount.gameObject.SetActive(false);
-            if (managerspawned == false)
+        if (startcount == true) {
+            count -= Time.deltaTime;
+            if (count <= 0)
             {
-                Instantiate(puppymanager, transform.position, Quaternion.identity);
-                managerspawned = true;
+                startCount.gameObject.SetActive(false);
+                puppymanager.GetComponent<PuppyManager>().enabled = true;
+                ball.GetComponent<StateMachineBall>().enabled = true;
+                startcount = false;
             }
         }
     }
