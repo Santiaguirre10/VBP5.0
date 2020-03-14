@@ -48,4 +48,21 @@ public class StateMachinePuppy : MonoBehaviour
             actualState.enabled = true;
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.name == "Player" && escapeState.enabled == true)
+        {
+            puppymanager.puppys.Remove(gameObject);
+            puppymanager.distances.Remove(gameObject.transform.position.x);
+            puppymanager.mindistance = 20f;
+            life--;
+        }
+        if (collision.name == "Ball" && zoneState.enabled == true)
+        {
+            puppymanager.puppys.Remove(gameObject);
+            puppymanager.distances.Remove(gameObject.transform.position.x);
+            puppymanager.mindistance = 20f;
+            life--;
+        }
+    }
 }

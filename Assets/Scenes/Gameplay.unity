@@ -1072,7 +1072,7 @@ GameObject:
   - component: {fileID: 1583782496}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Atacando
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1439,7 +1439,6 @@ GameObject:
   - component: {fileID: 2013722644}
   - component: {fileID: 2013722647}
   - component: {fileID: 2013722648}
-  - component: {fileID: 2013722646}
   - component: {fileID: 2013722656}
   - component: {fileID: 2013722655}
   - component: {fileID: 2013722654}
@@ -1517,27 +1516,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2013722646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013722643}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 717cda8b25530dd4fad559dd0bd7e8a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  start: {fileID: 1652769850}
-  pmax: {x: 0, y: 0}
-  end: {fileID: 562334666}
-  speed: 0.5
-  player: {fileID: 1583782490}
-  puppymanager: {fileID: 0}
-  rebote: {fileID: 511169532}
-  setpoint: {fileID: 809177165}
-  uimanager: {fileID: 31048866}
 --- !u!58 &2013722647
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1587,7 +1565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c23480e422cc16841b396ae3affe53ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
   t: 0
 --- !u!114 &2013722651
 MonoBehaviour:
@@ -1640,6 +1618,7 @@ MonoBehaviour:
   rebound: {fileID: 511169532}
   machine: {fileID: 2013722656}
   player: {fileID: 1583782493}
+  speed: 10
 --- !u!114 &2013722654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1657,7 +1636,7 @@ MonoBehaviour:
   start: {fileID: 1652769850}
   puppymanager: {fileID: 1728416115}
   machine: {fileID: 2013722656}
-  speed: 5
+  speed: 10
 --- !u!114 &2013722655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1750,8 +1729,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 20

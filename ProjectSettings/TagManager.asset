@@ -4,17 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Atacando
-  - Armado
-  - Defendiendo
-  - Ataque
-  - Defensa
-  - EnZona
-  - Golpe
-  - Rebote
-  - Escapando
   - Spamer
-  - Golpeado
   - Puppy
   layers:
   - Default

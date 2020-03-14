@@ -10,7 +10,12 @@ public class AtackState : MonoBehaviour
     public PuppyManager puppymanager;
     public StateMachineBall machine;
     public float speed;
+    AtackState atackstate;
 
+    private void Start()
+    {
+        atackstate = GetComponent<AtackState>();
+    }
     void Update()
     {
         end.position = puppymanager.objball;
@@ -26,7 +31,7 @@ public class AtackState : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Puppy"))
+        if (collision.CompareTag("Puppy") && atackstate.enabled == true)
         {
             machine.ActivateState(machine.hitState);
         }

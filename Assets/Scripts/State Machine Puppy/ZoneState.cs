@@ -6,6 +6,7 @@ public class ZoneState : MonoBehaviour
 {
     public float speed;
     StateMachinePuppy machine;
+    ZoneState zonestate;
 
     private void Awake()
     {
@@ -14,7 +15,7 @@ public class ZoneState : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        zonestate = GetComponent<ZoneState>();
     }
 
     // Update is called once per frame
@@ -24,11 +25,11 @@ public class ZoneState : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name == "Valla")
+        if(collision.name == "Valla" && zonestate.enabled == true)
         {
             machine.ActivateState(machine.escapeState);
         }
-        if (collision.name == "Ball")
+        if (collision.name == "Ball" && zonestate.enabled == true)
         {
             machine.ActivateState(machine.kickedState);
         }

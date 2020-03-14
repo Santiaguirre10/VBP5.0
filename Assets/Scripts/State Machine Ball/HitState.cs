@@ -9,14 +9,16 @@ public class HitState : MonoBehaviour
     public Transform rebound;
     public StateMachineBall machine;
     public PlayerController player;
+    public float speed;
+    HitState hitstate;
 
+    private void Start()
+    {
+        hitstate = GetComponent<HitState>();
+    }
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, end.position, 2 * Time.deltaTime);
-        if (transform.position == end.position)
-        {
-            
-        }
+        transform.position = Vector2.MoveTowards(transform.position, end.position, speed * Time.deltaTime);
     }
     private void OnEnable()
     {
@@ -27,7 +29,7 @@ public class HitState : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "Rebote")
+        if (collision.name == "Rebote" && hitstate.enabled == true)
         {
             machine.ActivateState(machine.reboundState);
         }
