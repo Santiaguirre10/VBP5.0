@@ -31,7 +31,7 @@ public class AtackState : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Puppy") && atackstate.enabled == true)
+        if (collision.CompareTag("Puppy") && collision.GetComponent<ZoneState>().enabled == true)
         {
             machine.ActivateState(machine.hitState);
         }

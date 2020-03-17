@@ -21,7 +21,7 @@ public class DefenseState : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "SetPoint")
+        if (collision.name == "SetPoint" && gameObject.GetComponent<DefenseState>().enabled == true)
         {
             machine.ActivateState(machine.setState);
         }

@@ -11,7 +11,7 @@ public class StateMachinePuppy : MonoBehaviour
     private MonoBehaviour actualState;
 
     PuppyManager puppymanager;
-    int life;
+    public int life;
 
     private void Awake()
     {
@@ -47,22 +47,5 @@ public class StateMachinePuppy : MonoBehaviour
             actualState = newState;
             actualState.enabled = true;
         }
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.name == "Player" && escapeState.enabled == true)
-        {
-            puppymanager.puppys.Remove(gameObject);
-            puppymanager.distances.Remove(gameObject.transform.position.x);
-            puppymanager.mindistance = 20f;
-            life--;
-        }
-        if (collision.name == "Ball" && zoneState.enabled == true)
-        {
-            puppymanager.puppys.Remove(gameObject);
-            puppymanager.distances.Remove(gameObject.transform.position.x);
-            puppymanager.mindistance = 20f;
-            life--;
-        }
-    }
+    }   
 }
