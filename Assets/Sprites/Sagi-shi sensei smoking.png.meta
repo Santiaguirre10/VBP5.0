@@ -12,12 +12,6 @@ TextureImporter:
       213: 7666147148878214478
     second: Sagi-shi sensei smoking_2
   - first:
-      213: -9193629672547310669
-    second: Sagi-shi sensei smoking_3
-  - first:
-      213: 1683271040398571236
-    second: Sagi-shi sensei smoking_4
-  - first:
       213: -4215851939787732916
     second: Sagi-shi sensei smoking_5
   - first:
@@ -97,7 +91,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -164,48 +158,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sagi-shi sensei smoking_0
-      rect:
-        serializedVersion: 2
-        x: 873
-        y: 45
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a43a8b4d8b0026b499676e6f219f8841
-      internalID: -7664677078041602848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sagi-shi sensei smoking_1
-      rect:
-        serializedVersion: 2
-        x: 941
-        y: 41
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72aa1832ebf37274a901f4143a485fb7
-      internalID: -7478708231872194700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Sagi-shi sensei smoking_2
       rect:
         serializedVersion: 2
@@ -214,56 +166,14 @@ TextureImporter:
         width: 7
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d780f64877c7fac408f9b3471501141a
+      spriteID: 81e25f9ade9dee141a1af6cafc64c1a7
       internalID: 7666147148878214478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sagi-shi sensei smoking_3
-      rect:
-        serializedVersion: 2
-        x: 1013
-        y: 48
-        width: 6
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7c6ec8e80a6c9c439c1e45b31c6dcac
-      internalID: -9193629672547310669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sagi-shi sensei smoking_4
-      rect:
-        serializedVersion: 2
-        x: 1019
-        y: 55
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f9cbfc78026906449b45994c66e640f
-      internalID: 1683271040398571236
       vertices: []
       indices: 
       edges: []
@@ -277,13 +187,13 @@ TextureImporter:
         width: 48
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1f7f9d8937ca2b4098222709b117676
+      spriteID: deda2b301e0349e4684e8aa1f04dd9c4
       internalID: -4215851939787732916
       vertices: []
       indices: 
@@ -298,13 +208,13 @@ TextureImporter:
         width: 43
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fc9264f5c984794092b4c5d12a4981b
+      spriteID: 6d3919c6d03034e4fba8a86290cb9e81
       internalID: 6256084807398069601
       vertices: []
       indices: 
@@ -319,13 +229,13 @@ TextureImporter:
         width: 39
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 169004b7069859f4097aadfd1e7b306a
+      spriteID: b4f6ffe6998666249a177c5a56fd6d8f
       internalID: -534582510225113737
       vertices: []
       indices: 
@@ -340,13 +250,13 @@ TextureImporter:
         width: 35
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 379eaf1735e0f7d4ebc4d9c379523aab
+      spriteID: d9a0fa88fda9999458badb480d1f25f4
       internalID: 6594139464699856083
       vertices: []
       indices: 
@@ -361,13 +271,13 @@ TextureImporter:
         width: 35
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30ba294c809eee84482ac3715e063aed
+      spriteID: 833ea4b984dd91a4b80d90d54916f67a
       internalID: 7450372593612654385
       vertices: []
       indices: 
@@ -382,13 +292,13 @@ TextureImporter:
         width: 39
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33b80193e2c10b94d8c68806cccda055
+      spriteID: d7dff480ab2f5cf4889df140f9a62999
       internalID: 2218667325725319558
       vertices: []
       indices: 
@@ -403,13 +313,13 @@ TextureImporter:
         width: 43
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab2251a4e0313ad47ac45e4714ced510
+      spriteID: ff1dd695ae1a7494faa80e10b7ccda33
       internalID: -7750269418825035134
       vertices: []
       indices: 
@@ -424,13 +334,13 @@ TextureImporter:
         width: 43
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5d01108d33271747884202916dc8662
+      spriteID: 6ef37c74539dd5544a68783eead7ad60
       internalID: 5812077131417974167
       vertices: []
       indices: 
@@ -445,13 +355,13 @@ TextureImporter:
         width: 47
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1826e5673d80534eac35606e29c60b2
+      spriteID: 3b404fbf01c226040b218f6aa3afc309
       internalID: 7299437166090768523
       vertices: []
       indices: 
@@ -466,13 +376,13 @@ TextureImporter:
         width: 49
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71114114ebd434e45a9e923c4655094a
+      spriteID: 411e47b332548d441a871e45db7c9f89
       internalID: -2729336876883648890
       vertices: []
       indices: 
@@ -487,13 +397,13 @@ TextureImporter:
         width: 51
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afdc84aea41456e4e9605ff429ea54de
+      spriteID: 10e0e989a4bcf7b41b5103782ac7b97e
       internalID: -3387873567461054341
       vertices: []
       indices: 
@@ -508,13 +418,13 @@ TextureImporter:
         width: 50
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41762e677a76d1549b254f45065b1adb
+      spriteID: 3c25457a1de47ed4bb68428dcaecd27b
       internalID: -8383910788695672854
       vertices: []
       indices: 
@@ -529,35 +439,14 @@ TextureImporter:
         width: 51
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9c84249c70ed9d4ca03de9f8b066f8e
+      spriteID: c359145edf38858409f0496e2f49f11a
       internalID: -1928577935812246226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sagi-shi sensei smoking_18
-      rect:
-        serializedVersion: 2
-        x: 867
-        y: 36
-        width: 15
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b12e6c2214953a4da05a6235853c0c1
-      internalID: -6418906830495871112
       vertices: []
       indices: 
       edges: []
@@ -566,18 +455,18 @@ TextureImporter:
       name: Sagi-shi sensei smoking_19
       rect:
         serializedVersion: 2
-        x: 874
+        x: 866
         y: 10
-        width: 43
-        height: 38
+        width: 51
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 470319d28021f7b43b67e0f5052a48d8
+      spriteID: 13a22b31c5bcf354a9daf611d43613b1
       internalID: -2529088517022680790
       vertices: []
       indices: 
@@ -587,18 +476,18 @@ TextureImporter:
       name: Sagi-shi sensei smoking_20
       rect:
         serializedVersion: 2
-        x: 946
+        x: 940
         y: 10
-        width: 43
-        height: 38
+        width: 49
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b35a89a5ecec019449c542a957445659
+      spriteID: 2ac0340e87b4b794183fabb9f5706bc6
       internalID: 490436265370620626
       vertices: []
       indices: 
@@ -608,18 +497,18 @@ TextureImporter:
       name: Sagi-shi sensei smoking_21
       rect:
         serializedVersion: 2
-        x: 1018
+        x: 1011
         y: 10
-        width: 43
-        height: 38
+        width: 49
+        height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 893eec54c2079284b91b87875df85c7f
+      spriteID: 74fd88452605bc64780f36dca0fc40c7
       internalID: 7686767539077618857
       vertices: []
       indices: 

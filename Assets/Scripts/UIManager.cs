@@ -9,7 +9,10 @@ public class UIManager : MonoBehaviour
     public GameObject startCount;
     public GameObject puppymanager;
     public GameObject ball;
+    public GameObject sensei;
+    public GameObject neko;
     bool startcount = true;
+    
     // Start is called before the first frame update
     private void Awake()
     {
@@ -31,6 +34,8 @@ public class UIManager : MonoBehaviour
                 startCount.gameObject.SetActive(false);
                 puppymanager.GetComponent<PuppyManager>().enabled = true;
                 ball.GetComponent<StateMachineBall>().enabled = true;
+                sensei.GetComponent<Animator>().enabled = true;
+                neko.GetComponent<Animator>().enabled = true;
                 startcount = false;
             }
         }

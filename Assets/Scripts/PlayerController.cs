@@ -10,6 +10,10 @@ public class PlayerController : MonoBehaviour
     public UIManager uimanager;
     public bool atacking;
     public bool defending;
+    public float a;
+    public float b;
+    public float c;
+    public float d;
 
     // Start is called before the first frame update
     void Start()
@@ -58,27 +62,25 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("running");
             sprite.flipX = false;
         }
-        else
-        {
             animator.SetTrigger("idle");
-        }
+        
     }
     void LimitedArea()
     {
-        if (transform.position.x <= -1.61f)
+        if (transform.position.x <= 2.652f)
         {
             float step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, new Vector2(-1.6f, transform.position.y), step);
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(2.658f, transform.position.y), step);
         } 
-        if (transform.position.x >= 4.66f)
+        if (transform.position.x >= 4.855f)
         {
             float step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, new Vector2(4.6f, transform.position.y), step);
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(4.85f, transform.position.y), step);
         }
-        if (transform.position.y <= 2f)
+        if (transform.position.y <= 3.967f)
         {
             float step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, 2.1f), step);
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, 3.97f), step);
         }
         /*if (transform.position.y >= 5.72f)
         {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PuppyManager : MonoBehaviour
 {
-    public GameObject puppy1;
+    public GameObject[] puppytype;
     public GameObject[] puppyspamer;
     public List<GameObject> puppys;
     public List<float> distances;
@@ -24,7 +24,7 @@ public class PuppyManager : MonoBehaviour
     void PuppyCreator()
     {
         int rdm = Random.Range(0 , 3);
-        Instantiate(puppy1, puppyspamer[rdm].transform.position , Quaternion.identity);
+        Instantiate(puppytype[rdm], puppyspamer[rdm].transform.position , Quaternion.identity);
     }
     void DistanceCalculator()
     {
