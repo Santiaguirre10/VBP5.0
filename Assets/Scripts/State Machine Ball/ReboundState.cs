@@ -17,8 +17,8 @@ public class ReboundState : MonoBehaviour
     private void OnEnable()
     {
         start.position = rebound.position;
-        var x = Random.Range(-1.31f, 4.97f);
-        var y = Random.Range(1.8f, 5.6f);
+        var x = Random.Range(2.652f, 4.856f);
+        var y = Random.Range(4.207189f, 5.228f);
         end.position = new Vector2(x, y);
     }
     private void OnTriggerEnter2D(Collider2D collision)

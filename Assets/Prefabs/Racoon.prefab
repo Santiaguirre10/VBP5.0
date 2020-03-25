@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: -1290813444569916215}
   - component: {fileID: -5659561629586717832}
   m_Layer: 0
-  m_Name: Puppy
+  m_Name: Racoon
   m_TagString: Puppy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,5 +238,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c23480e422cc16841b396ae3affe53ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.01
+  speed: 0.3
   t: 0

@@ -9,7 +9,7 @@ public class MenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("InitialLogo", 2f);
     }
 
     // Update is called once per frame
@@ -22,4 +22,8 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    void InitialLogo()
+    {
+
+    } 
 }

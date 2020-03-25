@@ -10,10 +10,9 @@ public class PlayerController : MonoBehaviour
     public UIManager uimanager;
     public bool atacking;
     public bool defending;
-    public float a;
-    public float b;
-    public float c;
-    public float d;
+    public FloatingJoystick joystick;
+    public float h;
+    public float v;
 
     // Start is called before the first frame update
     void Start()
@@ -37,26 +36,28 @@ public class PlayerController : MonoBehaviour
         {
             
         }
+        h = joystick.Horizontal;
+        v = joystick.Vertical;
     }
     void Move()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (v > 0)
         {
             transform.Translate(Vector3.up * speed * Time.deltaTime);
             animator.SetTrigger("running");
         }
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (v < 0)
         {
             transform.Translate(Vector3.down * speed * Time.deltaTime);
             animator.SetTrigger("running");
         } 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (h < 0)
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime);
             animator.SetTrigger("running");
             sprite.flipX = true;
         } 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (h > 0)
         {
             transform.Translate(Vector3.right * speed * Time.deltaTime);
             animator.SetTrigger("running");
@@ -72,20 +73,20 @@ public class PlayerController : MonoBehaviour
             float step = speed * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(2.658f, transform.position.y), step);
         } 
-        if (transform.position.x >= 4.855f)
+        if (transform.position.x >= 4.856f)
         {
             float step = speed * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(4.85f, transform.position.y), step);
         }
-        if (transform.position.y <= 3.967f)
+        if (transform.position.y <= 4.207189f)
         {
             float step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, 3.97f), step);
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, 4.2f), step);
         }
-        /*if (transform.position.y >= 5.72f)
+        /*if (transform.position.y >= 5.228f)
         {
             float step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, 5.7f), step);
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, 5.5.22f), step);
         }*/
     }
 }
