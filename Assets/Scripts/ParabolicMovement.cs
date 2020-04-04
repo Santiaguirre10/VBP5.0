@@ -8,11 +8,12 @@ public class ParabolicMovement : MonoBehaviour
     float rateVelocity;
     public float speed;
     public float t;
+
     public void MovimientoParab(Vector2 a, Vector2 b)
     {
-        pmax = new Vector2((b.x - a.x) / 2 + a.x, b.y * 1.5f);
+        pmax = new Vector2((b.x - a.x) / 2 + a.x, b.y * -1.5f);
         rateVelocity = 1f / Vector2.Distance(a, b) * speed;
-        t += Time.deltaTime * rateVelocity;
+        t += Time.deltaTime * speed;
         if (t < 1.0f)
         {
             transform.position = Parabola(t, a, pmax, b);

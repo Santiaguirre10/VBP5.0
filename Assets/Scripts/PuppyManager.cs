@@ -31,19 +31,19 @@ public class PuppyManager : MonoBehaviour
         for (int i = 0; i < puppys.Count; i++)
         {
             distances[i] = puppys[i].transform.position.x;
-        }
-        for (int i = 0; i < distances.Count; i++)
-        {
-            if (mindistance > distances[i])
+            for (int j = 0; j < distances.Count; j++)
             {
-                mindistance = distances[i];
-            }
-        }
-        for (int i = 0; i < puppys.Count; i++)
-        {
-            if (mindistance == puppys[i].transform.position.x)
-            {
-                objball = new Vector2(puppys[i].transform.position.x, puppys[i].transform.position.y);
+                if (mindistance > distances[j])
+                {
+                    mindistance = distances[j];
+                }
+                for (int k = 0; k < puppys.Count; k++)
+                {
+                    if (mindistance == puppys[k].transform.position.x)
+                    {
+                        objball = new Vector2(puppys[k].transform.position.x, puppys[k].transform.position.y);
+                    }
+                }
             }
         }
     }

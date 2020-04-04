@@ -30,13 +30,17 @@ public class ZoneState : MonoBehaviour
         {
             machine.ActivateState(machine.escapeState);
         }
-       if (collision.name == "Ball" && collision.GetComponent<AtackState>().enabled == true)
+        if (collision.name == "Ball" && collision.GetComponent<AtackState>().enabled == true)
         {
             puppymanager.puppys.Remove(gameObject);
             puppymanager.distances.Remove(gameObject.transform.position.x);
-            puppymanager.mindistance = 20f;
+            puppymanager.mindistance = 10f;
             machine.life--;
             machine.ActivateState(machine.kickedState);
         }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        
     }
 }

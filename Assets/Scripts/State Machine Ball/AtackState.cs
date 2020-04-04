@@ -20,10 +20,6 @@ public class AtackState : MonoBehaviour
     {
         end.position = puppymanager.objball;
         transform.position = Vector2.MoveTowards(transform.position, end.position, speed * Time.deltaTime );
-        if (transform.position == end.position)
-        {
-            machine.ActivateState(machine.hitState);
-        }
     }
     private void OnEnable()
     {
@@ -31,7 +27,7 @@ public class AtackState : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Puppy") && collision.GetComponent<ZoneState>().enabled == true)
+        if (collision.CompareTag("Puppy"))
         {
             machine.ActivateState(machine.hitState);
         }

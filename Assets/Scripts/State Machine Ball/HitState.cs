@@ -29,7 +29,7 @@ public class HitState : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "Rebote" && hitstate.enabled == true)
+        if (collision.name == "Rebote")
         {
             machine.ActivateState(machine.reboundState);
         }

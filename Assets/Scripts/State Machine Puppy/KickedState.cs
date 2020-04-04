@@ -6,7 +6,6 @@ public class KickedState : MonoBehaviour
 {
     StateMachinePuppy machine;
     PuppyManager puppymanager;
-    Vector3 initpos;
     ParabolicMovement parab;
 
     // Start is called before the first frame update
@@ -16,7 +15,6 @@ public class KickedState : MonoBehaviour
     }
     void Start()
     {
-        initpos = transform.position;
         machine = GetComponent<StateMachinePuppy>();
         parab = GetComponent<ParabolicMovement>();
     }
@@ -24,11 +22,11 @@ public class KickedState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        parab.MovimientoParab(transform.position, initpos);
+        parab.MovimientoParab(transform.position, machine.initpos);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Spamer") && transform.position == initpos)
+        if (collision.CompareTag("Spamer") && transform.position == machine.initpos)
         {
             puppymanager.puppys.Add(gameObject);
             puppymanager.distances.Add(gameObject.transform.position.x);

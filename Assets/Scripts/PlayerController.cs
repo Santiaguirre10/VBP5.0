@@ -68,25 +68,25 @@ public class PlayerController : MonoBehaviour
     }
     void LimitedArea()
     {
-        if (transform.position.x <= 2.652f)
+        if (transform.position.x <= 0.728f)
         {
             float step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, new Vector2(2.658f, transform.position.y), step);
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(0.73f, transform.position.y), step);
         } 
-        if (transform.position.x >= 4.856f)
+        if (transform.position.x >= 4.15f)
         {
             float step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, new Vector2(4.85f, transform.position.y), step);
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(4.14f, transform.position.y), step);
         }
-        if (transform.position.y <= 4.207189f)
+        if (transform.position.y <= -3.98f)
         {
             float step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, 4.2f), step);
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, -3.97f), step);
         }
-        /*if (transform.position.y >= 5.228f)
+        /*if (transform.position.y >= -1.981f)
         {
             float step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, 5.5.22f), step);
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, -1.982f), step);
         }*/
     }
 }

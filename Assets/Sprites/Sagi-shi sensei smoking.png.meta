@@ -62,6 +62,12 @@ TextureImporter:
   - first:
       213: 7686767539077618857
     second: Sagi-shi sensei smoking_21
+  - first:
+      213: -9193629672547310669
+    second: Sagi-shi sensei smoking_3
+  - first:
+      213: 1683271040398571236
+    second: Sagi-shi sensei smoking_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -105,7 +111,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -158,22 +164,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sagi-shi sensei smoking_2
+      name: Sagi-shi sensei smoking_0
       rect:
         serializedVersion: 2
-        x: 947
-        y: 50
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 0
+        width: 72
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81e25f9ade9dee141a1af6cafc64c1a7
+      spriteID: a5241d034d7fdd545baef1312a89534e
+      internalID: -7664677078041602848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sagi-shi sensei smoking_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 72
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c4b77953df13e408db4b1bfac1a294
+      internalID: -7478708231872194700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sagi-shi sensei smoking_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 72
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5523a9cec74010740a362134e7fc7831
       internalID: 7666147148878214478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sagi-shi sensei smoking_3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 72
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c307ae20d9f39ea4a959e93a85c2d705
+      internalID: -9193629672547310669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sagi-shi sensei smoking_4
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 72
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc5b2517799deb49adf691acedec9d1
+      internalID: 1683271040398571236
       vertices: []
       indices: 
       edges: []
@@ -182,18 +272,18 @@ TextureImporter:
       name: Sagi-shi sensei smoking_5
       rect:
         serializedVersion: 2
-        x: 1085
-        y: 10
-        width: 48
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 360
+        y: 0
+        width: 72
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: deda2b301e0349e4684e8aa1f04dd9c4
+      spriteID: adf46782061d80a4c91cda5b49b816cd
       internalID: -4215851939787732916
       vertices: []
       indices: 
@@ -203,18 +293,18 @@ TextureImporter:
       name: Sagi-shi sensei smoking_6
       rect:
         serializedVersion: 2
-        x: 10
-        y: 10
-        width: 43
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 432
+        y: 0
+        width: 72
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d3919c6d03034e4fba8a86290cb9e81
+      spriteID: a9008b30b1bf4614a9ce97f036a505a5
       internalID: 6256084807398069601
       vertices: []
       indices: 
@@ -224,18 +314,18 @@ TextureImporter:
       name: Sagi-shi sensei smoking_7
       rect:
         serializedVersion: 2
-        x: 86
-        y: 10
-        width: 39
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 504
+        y: 0
+        width: 72
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4f6ffe6998666249a177c5a56fd6d8f
+      spriteID: ad9326cdec8f16e47bd463c99da2e0de
       internalID: -534582510225113737
       vertices: []
       indices: 
@@ -245,18 +335,18 @@ TextureImporter:
       name: Sagi-shi sensei smoking_8
       rect:
         serializedVersion: 2
-        x: 162
-        y: 10
-        width: 35
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 576
+        y: 0
+        width: 72
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9a0fa88fda9999458badb480d1f25f4
+      spriteID: cc51d78593ad9ad4887c53bb2f43a81b
       internalID: 6594139464699856083
       vertices: []
       indices: 
@@ -266,18 +356,18 @@ TextureImporter:
       name: Sagi-shi sensei smoking_9
       rect:
         serializedVersion: 2
-        x: 234
-        y: 10
-        width: 35
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 648
+        y: 0
+        width: 72
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 833ea4b984dd91a4b80d90d54916f67a
+      spriteID: 9c48b2ff23ef0b04ba11729099d64927
       internalID: 7450372593612654385
       vertices: []
       indices: 
@@ -287,18 +377,18 @@ TextureImporter:
       name: Sagi-shi sensei smoking_10
       rect:
         serializedVersion: 2
-        x: 302
-        y: 10
-        width: 39
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 720
+        y: 0
+        width: 72
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7dff480ab2f5cf4889df140f9a62999
+      spriteID: b6b2295bd10454a43990208ee25e3bcb
       internalID: 2218667325725319558
       vertices: []
       indices: 
@@ -308,18 +398,18 @@ TextureImporter:
       name: Sagi-shi sensei smoking_11
       rect:
         serializedVersion: 2
-        x: 370
-        y: 10
-        width: 43
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 792
+        y: 0
+        width: 72
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff1dd695ae1a7494faa80e10b7ccda33
+      spriteID: d93260d52d1ab8b47a36b9e32f055635
       internalID: -7750269418825035134
       vertices: []
       indices: 
@@ -329,18 +419,18 @@ TextureImporter:
       name: Sagi-shi sensei smoking_12
       rect:
         serializedVersion: 2
-        x: 442
-        y: 10
-        width: 43
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 864
+        y: 0
+        width: 72
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ef37c74539dd5544a68783eead7ad60
+      spriteID: 2f487950f664226479b4e98880d3944c
       internalID: 5812077131417974167
       vertices: []
       indices: 
@@ -350,18 +440,18 @@ TextureImporter:
       name: Sagi-shi sensei smoking_13
       rect:
         serializedVersion: 2
-        x: 510
-        y: 10
-        width: 47
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 936
+        y: 0
+        width: 72
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b404fbf01c226040b218f6aa3afc309
+      spriteID: 5d9122ce255f2e248ad8c093f6c76d1e
       internalID: 7299437166090768523
       vertices: []
       indices: 
@@ -371,18 +461,18 @@ TextureImporter:
       name: Sagi-shi sensei smoking_14
       rect:
         serializedVersion: 2
-        x: 580
-        y: 10
-        width: 49
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1008
+        y: 0
+        width: 72
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 411e47b332548d441a871e45db7c9f89
+      spriteID: 335b6dbd378cfd24e87d8f9456cb1abb
       internalID: -2729336876883648890
       vertices: []
       indices: 
@@ -392,124 +482,19 @@ TextureImporter:
       name: Sagi-shi sensei smoking_15
       rect:
         serializedVersion: 2
-        x: 650
-        y: 10
-        width: 51
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1080
+        y: 0
+        width: 72
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10e0e989a4bcf7b41b5103782ac7b97e
+      spriteID: c8e731c780ae7e747b4fcdd51e3ea0e3
       internalID: -3387873567461054341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sagi-shi sensei smoking_16
-      rect:
-        serializedVersion: 2
-        x: 723
-        y: 10
-        width: 50
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c25457a1de47ed4bb68428dcaecd27b
-      internalID: -8383910788695672854
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sagi-shi sensei smoking_17
-      rect:
-        serializedVersion: 2
-        x: 794
-        y: 10
-        width: 51
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c359145edf38858409f0496e2f49f11a
-      internalID: -1928577935812246226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sagi-shi sensei smoking_19
-      rect:
-        serializedVersion: 2
-        x: 866
-        y: 10
-        width: 51
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13a22b31c5bcf354a9daf611d43613b1
-      internalID: -2529088517022680790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sagi-shi sensei smoking_20
-      rect:
-        serializedVersion: 2
-        x: 940
-        y: 10
-        width: 49
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ac0340e87b4b794183fabb9f5706bc6
-      internalID: 490436265370620626
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sagi-shi sensei smoking_21
-      rect:
-        serializedVersion: 2
-        x: 1011
-        y: 10
-        width: 49
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74fd88452605bc64780f36dca0fc40c7
-      internalID: 7686767539077618857
       vertices: []
       indices: 
       edges: []

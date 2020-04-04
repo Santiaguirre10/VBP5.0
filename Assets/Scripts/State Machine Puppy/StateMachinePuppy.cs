@@ -12,6 +12,7 @@ public class StateMachinePuppy : MonoBehaviour
 
     PuppyManager puppymanager;
     public int life;
+    public Vector3 initpos;
 
     private void Awake()
     {
@@ -24,6 +25,7 @@ public class StateMachinePuppy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        initpos = transform.position;
         life = 3;
         actualState = initialState;
         ActivateState(initialState);
@@ -35,7 +37,7 @@ public class StateMachinePuppy : MonoBehaviour
         {
             puppymanager.puppys.Remove(gameObject);
             puppymanager.distances.Remove(gameObject.transform.position.x);
-            puppymanager.mindistance = 20f;
+            puppymanager.mindistance = 10f;
             Destroy(gameObject);
         }
     }
